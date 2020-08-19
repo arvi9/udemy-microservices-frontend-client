@@ -8,7 +8,8 @@ export default () => {
 
   const fetchPosts = async () => {
     //We are getting the results from --> Query API @ 4002
-    const res = await axios.get("http://localhost:4002/posts");
+    // const res = await axios.get("http://localhost:4002/posts");
+    const res = await axios.get("http://posts.com/posts");
 
     setPosts(res.data);
   };
